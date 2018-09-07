@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Violencia y Robos GDL</title>
+	 <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" type="text/css" href="Estilos.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+
+	<body background="background.jpg">
+		<div id="main" class="row">
+		<div id="menu"class="col s3">
+			<div id="VEG" class="menuTitle" class="row">Violence in Guadalajara</div>
+			<div id="Intro" class="menusub" class="row">Introduction</div>
+			<div id="AR" class="menusub" class="row">Academic Research</div>
+			<div id="SI" class="menusub" class="row">Social Impact</div>
+		</div>
+		<div id="info" class="col s9">
+			<div id="intro"></div>
+		</div>
+		</div>
+
+		<script>
+		document.getElementById("Intro").addEventListener("click",dissappear);
+		function dissappear(){
+			document.getElementById("intro").innerHTML = "Introduction <br /><br /> The problem we decided to investigate is violence, unfortunately in our country this is a situation that we live in our daily life. All kinds of violence constantly happen in the streets of Mexico, people often live without the confidence to go out and not  worry about being attacked or robbed. Even though all the effort that has been made from the government to stop this situation it keeps getting worse. We are still very far away from being a first world country without violence.<br /><br />Nobody is safe from violence in Mexico, all kind of violent acts like kidnappings, robberies, homicide and sexual assaults are committed against all kinds of people. So, every citizen is affected by this problem that keeps increasing day to day.<br /><br />Due to the lack of job and the low minimum wage we have in Mexico some people often commit crimes to get money and those acts lead to violence. Also, the lack of education is a reason for violence, people with no education are more unconscious about the consequences of this problem. Because of this, people with no education can't find a job and without an income they commit crimes.<br /><br />";
+			document.getElementById("intro").innerHTML += "<img src=\"cjng.jpg\"width=\"400px\" height=\"250px\">";
+			document.getElementById("intro").innerHTML += "<br />Violence is affecting us in many ways, in terms of insecurity, it is so recurrent that we are always having to think of the probability of a crime every time we go out. We are so constantly living with violence that is starting to become normal to see homicides, kidnappings and all that stuff that surrounds use in our daily life. The development of the country is also affected by this problem, new businesses cant be developed in certain zones because of the fear to violence. Violence leads to insecurity, and insecurity fends off potential investors and it makes it a more hostile environment for people that come from other places to study or work.<br /><br />Page made by:<br /><br />Andre Calderon Barbeito A01401035<br /><br />Juan Jose Cazarez Gastelum A00570574 ";
+			document.getElementById("intro").style.backgroundColor = "Cornsilk";
+			document.getElementById("intro").style.opacity = "100";
+		}
+		document.getElementById("AR").addEventListener("click",dissapear);
+		function dissapear(){
+		document.getElementById("intro").innerHTML = "Academic research<br /><br />We have found that violence is increasing in Mexico, everyday an incredible number of crimes are committed in all the country.  Since we live in Guadalajara, which is a big city, we decided to take a closer look to all the violent situations that happen here as a reference for the country.  So, we have some violent crimes that happened in Guadalajara recently:<br /><br />";
+		document.getElementById("intro").innerHTML += "<br />In the whole 2017:<br /><br />Homicides: 1369<br />Personal Robberies: 2969<br />Vehicle Robberies: 4080<br />House Robberies: 3506<br /><br />";
+		document.getElementById("intro").innerHTML += "<img src=\"feminicidio.jpg\"width=\"80%\">";
+		document.getElementById("intro").innerHTML += "<br /><br />June 2018:<br /><br />Homicides: 42<br />Personal Robberies: 383<br />Vehicle Robberies: 490<br />House Robberies: 101<br /><br />";
+		document.getElementById("intro").innerHTML += "July 2018:<br /><br />Homicides:  37<br />Personal Robberies: 437<br />Vehicle Robberies: 457<br />House Robberies: 104<br /><br />";
+		document.getElementById("intro").innerHTML += "<img src=\"asaltos.jpg\"width=\"80%\">";
+		document.getElementById("intro").innerHTML += "<br /><br />Reference: <br /><br />http://infopublicafge.jalisco.gob.mx/Transparencia_PGJEJ/Estadisticas_PGJEJ/estadisticas_pgjej.htm";
+		document.getElementById("intro").style.backgroundColor = "Cornsilk";
+		document.getElementById("intro").style.opacity = "100";
+		}
+		document.getElementById("SI").addEventListener("click",appear);
+		function appear(){
+		document.getElementById("intro").innerHTML = "Social Impact<br /><br />The world is also being affected by violence, in some places like middle east countries this problem is even worse than our country. Wars are still a reality in our world, those are the greater example of violence and they keep happening in other countries. The principal problems that violence generates around the world are insecurity, economic loses and the most important: physical and emotional damages in the victims. A lot of people have tried to eradicate violence from the root, but even though all the effort this is still a problem that keeps affecting the whole world.<br /><br />";
+		document.getElementById("intro").innerHTML += "<img src=\"war.jpg\"width=\"80%\">";
+		document.getElementById("intro").style.backgroundColor = "Cornsilk";
+		document.getElementById("intro").style.opacity = "100";
+		}
+		document.getElementById("VEG").addEventListener("click",clear);
+		function clear(){
+		document.getElementById("intro").innerHTML = "";
+		document.getElementById("intro").style.backgroundColor = "Cornsilk";
+		document.getElementById("intro").style.opacity = "0";
+		}
+
+		</script>
+	</body>
+
+</html>
